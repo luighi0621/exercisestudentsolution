@@ -10,6 +10,7 @@ namespace StudentSolution
     {
         static void Main(string[] args)
         {
+            
         }
     }
 }
