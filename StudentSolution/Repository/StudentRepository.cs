@@ -30,6 +30,8 @@ namespace StudentSolution.Repository
             new Student("Kinder,Luis,M,20151231145934"),
             new Student("High,Naty,F,20140220180903"),
             new Student("kinder,Naty,F,20100220180903"),
+            new Student("kinder,Ariel,F,20100220180903"),
+            new Student("kinder,Ariel,M,20150210080903"),
         };
 
         public List<Student> GetList()

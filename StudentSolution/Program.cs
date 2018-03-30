@@ -1,5 +1,6 @@
 ﻿using StudentSolution.Model;
 using StudentSolution.Repository;
+using StudentSolution.Search;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -39,7 +40,16 @@ namespace StudentSolution
 
         private static List<Student> SearchBy(List<string> searchParams)
         {
-            throw new NotImplementedException();
+            List<Student> filteredList = _StudentRepo.GetList();
+            foreach (string param in searchParams)
+            {
+                var values = param.Split('=');
+                SearchByParam search = new SearchByParam();
+                search.SetList(filteredList);
+                search.SetParams(values[0], values[1]);
+                filteredList = search.Search();
+            }
+            return filteredList;
         }
 
         private static void LoadDataFromCVS(string fileName)

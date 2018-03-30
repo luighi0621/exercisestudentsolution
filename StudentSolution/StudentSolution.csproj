@@ -42,12 +42,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\ConvertHelpers.cs" />
     <Compile Include="Helpers\Enums.cs" />
     <Compile Include="Model\Student.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\StudentRepository.cs" />
+    <Compile Include="Search\ISearchable.cs" />
+    <Compile Include="Search\SearchByParam.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
