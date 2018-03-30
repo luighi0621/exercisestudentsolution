@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="ConvertHelpersTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearchByParamTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

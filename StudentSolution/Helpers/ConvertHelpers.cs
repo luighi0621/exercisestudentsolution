@@ -17,11 +17,6 @@ namespace StudentSolution.Helpers
             }
         }
 
-        public static string ConvertToTimeStamp(DateTime date)
-        {
-            return date.ToString("yyyyMMddHHmmss");
-        }
-
         public static Gender ConvertToGender(string stringGender)
         {
             char valueToCompare = stringGender[0];

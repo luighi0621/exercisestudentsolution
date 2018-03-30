@@ -22,7 +22,7 @@ namespace StudentSolution.Model
 
         public override string ToString()
         {
-            return string.Format("{0},{1},{2},{3}",StudentType.ToString(), Name, ConvertHelpers.ConvertEnumGenderToChar(Gender), ConvertHelpers.ConvertToTimeStamp(LastUpdate));
+            return string.Format("{0},{1},{2},{3}",StudentType.ToString(), Name, ConvertHelpers.ConvertEnumGenderToChar(Gender), LastUpdate.ToString("yyyyMMddHHmmss"));
         }
         public Student(string name, string gender, string studentType)
         {
