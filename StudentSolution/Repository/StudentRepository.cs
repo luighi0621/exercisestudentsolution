@@ -51,5 +51,11 @@ namespace StudentSolution.Repository
         {
             _list.AddRange(res);
         }
+
+        public void RemoveByName(string name)
+        {
+            Student st = _list.Where(stu => stu.Name == name).FirstOrDefault();
+            Remove(st);
+        }
     }
 }
