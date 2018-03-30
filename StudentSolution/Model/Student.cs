@@ -19,6 +19,6 @@ namespace StudentSolution.Model
             var values = cvsLine.Split(',');
             StudentType = (StudentType)Enum.Parse(typeof(StudentType), values[0], true);
             Name = values[1];
-        }
+        
     }
 }

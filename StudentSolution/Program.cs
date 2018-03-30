@@ -24,11 +24,20 @@ namespace StudentSolution
                 {
                     _SearchParams.Add(args[i]);
                 }
-                SearchBy(_SearchParams);
+                List<Student> filtered = SearchBy(_SearchParams);
+                PrintResult(filtered);
             }
         }
 
-        private static void SearchBy(List<string> searchParams)
+        private static void PrintResult(List<Student> filtered)
+        {
+            foreach (Student st in filtered)
+            {
+                Console.WriteLine(st.ToString());
+            }
+        }
+
+        private static List<Student> SearchBy(List<string> searchParams)
         {
             throw new NotImplementedException();
         }
