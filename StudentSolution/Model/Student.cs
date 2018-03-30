@@ -28,5 +28,12 @@ namespace StudentSolution.Model
         {
             return string.Format("{0},{1},{2},{3}",StudentType.ToString(), Name, ConvertHelpers.ConvertEnumGenderToChar(Gender), ConvertHelpers.ConvertToTimeStamp(LastUpdate));
         }
+        public Student(string name, string gender, string studentType)
+        {
+            Name = name;
+            StudentType = (StudentType)Enum.Parse(typeof(StudentType), studentType, true);
+            Gender = ConvertHelpers.ConvertToGender(gender);
+            LastUpdate = DateTime.Now;
+        }
     }
 }
