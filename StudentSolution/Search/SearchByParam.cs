@@ -27,7 +27,7 @@ namespace StudentSolution.Search
             switch (_param.ToLower())
             {
                 case "name":
-                    res.AddRange(_list.Where(st => st.Name == _value).OrderBy(st => st.Name).ToList());
+                    res.AddRange(_list.Where(st => string.Compare(st.Name, _value, true)==0).OrderBy(st => st.Name).ToList());
                     break;
                 case "type":
                     res.AddRange(_list.Where(st => string.Compare(st.StudentType.ToString(), _value, true) == 0).OrderBy(st => st.LastUpdate).ToList());
