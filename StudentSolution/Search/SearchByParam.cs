@@ -27,8 +27,6 @@ namespace StudentSolution.Search
         public List<Student> Search()
         {
             List<Student> res = new List<Student>();
-            Console.WriteLine(_param);
-            Console.WriteLine(_value);
             switch (_param.ToLower())
             {
                 case "name":
