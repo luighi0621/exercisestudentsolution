@@ -46,5 +46,10 @@ namespace StudentSolution.Repository
         {
             _list.Add(st);
         }
+
+        internal void AddStudents(List<Student> res)
+        {
+            _list.AddRange(res);
+        }
     }
 }
